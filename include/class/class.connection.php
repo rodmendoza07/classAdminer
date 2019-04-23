@@ -6,7 +6,7 @@
     $p = "root";
     //$p = "";
     //$p = "MlKGum7C";
-    $b = "tlakualcoyan";
+    $b = "nemachtilkali";
     //$b = "ctsnet_tlakualco";
     $conecta = new mysqli($s, $u, $p, $b);
     // $conecta->set_charset("utf8");
