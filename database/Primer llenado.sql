@@ -186,12 +186,42 @@ insert into nemachtilkali.nm_usuario (
     , 'Administrador@emporiosalsa.mx'
     , 1
     , 1
+), (
+	'ivan'
+    , 'Ivan'
+    , 'Soria'
+    , ''
+    , md5(concat('ivan__3mp0r10@emporiosalsa.mx'))
+    , 'isoria@emporiosalsa.mx'
+    , 2
+    , 1 
 );
 
 insert into nm_appmenu ( 
 	nmapp_link
     , nmapp_cuid
 ) values (
-	'<li class="active"><a href="index.php" class="food"><em class="fa fa-cutlery">&nbsp;</em> Alimentos</a></li>'
+	'<li class="active"><a href="index.php" class="list"><em class="fa fa-address-card">&nbsp;</em> Asistencias</a></li>'
     , 1
+), (
+	'<li><a href="#" class="payment"><em class="fa fa-dollar">&nbsp;</em> Pagos</a></li>'
+    , 1
+), (
+	'<li><a href="#" class="nclient"><em class="fa fa-user-plus">&nbsp;</em> Registro de clientes</a></li>'
+    , 1
+), (
+	'<li><a href="#" class="reports"><em class="fa fa-line-chart">&nbsp;</em> Reportes</a></li>'
+    , 1
+), (
+	'<li><a href="#" class="config"><em class="fa fa-cogs">&nbsp;</em> Configuración</a></li>'
+    , 1
+), (
+	'<li class="active"><a href="index.php" class="list"><em class="fa fa-address-card">&nbsp;</em> Asistencias</a></li>'
+    , 2
+), (
+	'<li><a href="#" class="payment"><em class="fa fa-dollar">&nbsp;</em> Pagos</a></li>'
+    , 2
+), (
+	'<li><a href="#" class="nclient"><em class="fa fa-user-plus">&nbsp;</em> Registro de clientes</a></li>'
+    , 2
 );
