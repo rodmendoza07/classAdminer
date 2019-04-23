@@ -110,8 +110,8 @@
                     $errno = $call->errno;
                     $msg = $call->error;
                     $resp = array('status' => 500, 'errno' => $errno, 'message' => utf8_encode($msg));
-                    //echo json_encode($resp);
-                    header('location: ../login.html');
+                    echo json_encode($resp);
+                    //header('location: ../login.html');
 
                 } else {
                     session_start();

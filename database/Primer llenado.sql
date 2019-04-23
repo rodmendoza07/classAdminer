@@ -182,8 +182,16 @@ insert into nemachtilkali.nm_usuario (
     , 'Administrador'
     , 'Emporio'
     , 'Salsa'
-    , md5(concat('Administrador__3mp0r10@emporiosalsa.mx'))
+    , md5(concat('admin__3mp0r10@emporiosalsa.mx'))
     , 'Administrador@emporiosalsa.mx'
     , 1
+    , 1
+);
+
+insert into nm_appmenu ( 
+	nmapp_link
+    , nmapp_cuid
+) values (
+	'<li class="active"><a href="index.php" class="food"><em class="fa fa-cutlery">&nbsp;</em> Alimentos</a></li>'
     , 1
 );

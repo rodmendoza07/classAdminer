@@ -21,7 +21,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>:: Mega Burro Express ::</title>
+	<title>:: Emporio Salsa ::</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/datepicker3.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
 	<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
 	<link href="toastr/build/toastr.min.css" rel="stylesheet"/>
-	<link rel="icon" type="images" href="images/negroBurro.jpg">
+	<link rel="icon" type="images" href="images/emporio.jpg">
 	
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -38,7 +38,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body onload="AppBegin()">
+<!--<body onload="AppBegin()">-->
+	<body>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -46,7 +47,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="#"><span>Mega Burro&nbsp;</span>Express</a>
+				<a class="navbar-brand" href="#"><span>Emporio&nbsp;Salsa</span></a>
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
 						<em class="fa fa-bell"></em><span class="label label-info" id="notice_alert"></span>
@@ -64,7 +65,7 @@
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<div class="profile-sidebar">
 			<div class="profile-userpic">
-				<img src="images/negroBurro.jpg" class="img-responsive" alt="">
+				<img src="images/emporio.jpg" class="img-responsive" alt="">
 			</div>
 			<div class="profile-usertitle">
 				<div class="profile-usertitle-name" id="usrnombre"><?php echo $_SESSION['un']; ?></div>
