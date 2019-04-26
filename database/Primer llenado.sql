@@ -130,6 +130,7 @@ insert into nemachtilkali.nm_cathorarios (
 insert into nemachtilkali.nm_catpagos (
 	nmcp_desc
     , nmcp_amount
+    , nmcp_clasnum
 ) values (
 	'Membresía Gold'
     , 900
@@ -140,20 +141,25 @@ insert into nemachtilkali.nm_catpagos (
 	'Membresía Bronze'
     , 900
 ), (
-	'Mes membresia Gold'
+	'Paquete 16 clases'
     , 900
+    , 16
 ), (
-	'Mes membresía Silver'
+	'Paquete 8 clases'
     , 900
+    , 8
 ), (
-	'Mes membresía Bronze'
+	'Paquete 5 clases'
     , 900
+    ,5
 ), (
 	'Mes sin membresía'
     , 900
 ), (
 	'Clase Individual'
     , 900
+), (
+	
 );
 
 insert into nemachtilkali.nm_catmembership (
@@ -195,6 +201,15 @@ insert into nemachtilkali.nm_usuario (
     , 'isoria@emporiosalsa.mx'
     , 2
     , 1 
+), (
+	'rmendoza'
+    , 'Rodrigo'
+    , 'Mendoza'
+    , ''
+    , md5(concat('rmendoza__Rocksystem1@emporiosalsa.mx'))
+    , 'rmendoza@ctsnet.mx'
+    , 1
+    , 1 
 );
 
 insert into nm_appmenu ( 
@@ -225,3 +240,29 @@ insert into nm_appmenu (
 	'<li><a href="#" class="nclient"><em class="fa fa-user-plus">&nbsp;</em> Registro de clientes</a></li>'
     , 2
 );
+
+/*Dump*/
+insert into nemachtilkali.nm_clientes(
+	nmcl_nombre
+    , nmcl_apaterno
+    , nmcl_amaterno
+    , nmcl_mtel
+    , nmcl_ftel
+    , nmcl_ucreate
+) values (
+	'Luis Rodrigo'
+    , 'Mendoza'
+    , 'Rodríguez'
+    , '5514889583'
+    , '55986989'
+    , 3
+);
+
+insert into nemachtilkali.nm_actividadcliente (
+	nmac_clid
+    , nmac_clasid
+) values (
+	1
+    , 1
+);
+

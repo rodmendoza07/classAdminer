@@ -38,8 +38,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
-<!--<body onload="AppBegin()">-->
-	<body>
+<body onload="AppBegin()">
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
