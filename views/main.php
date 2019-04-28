@@ -46,7 +46,6 @@
                             <th class="text-center">Última visita</th>
                             <th class="text-center">Tipo de membresía</th>
                             <th class="text-center">Expira en:</th>
-                            <th class="text-center">Clases restantes</th>
                         </tr>
                     </thead>
                     <tbody>

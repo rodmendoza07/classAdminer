@@ -328,3 +328,37 @@ insert into nemachtilkali.nm_actividadcliente (
     , 1
 );
 
+insert into nemachtilkali.nm_lista (
+	nml_createdate
+    , nml_cid
+    , nml_uid
+) values (
+	now()
+    , 1
+    , 3
+);
+
+insert into nemachtilkali.nm_pagos (
+	nmp_cpid
+    , nmp_clid
+    , nmp_uid
+    , nmp_amount
+) values (
+	1
+    , 1
+    , 3
+    , 900
+), (
+	2
+    , 1
+    , 3
+    , 900
+);
+
+insert into nemachtilkali.nm_dpagom(
+	nmdpm_pid
+    , nmdpm_mid
+) values(
+	1
+    , 1
+);
