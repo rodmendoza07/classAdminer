@@ -129,47 +129,109 @@ insert into nemachtilkali.nm_cathorarios (
 
 insert into nemachtilkali.nm_catpagos (
 	nmcp_desc
-    , nmcp_amount
-    , nmcp_clasnum
 ) values (
-	'Membresía Gold'
-    , 900
+	'Membresía'
 ), (
-	'Membresía Silver'
-    , 900
-), (
-	'Membresía Bronze'
-    , 900
-), (
-	'Paquete 16 clases'
-    , 900
-    , 16
-), (
-	'Paquete 8 clases'
-    , 900
-    , 8
-), (
-	'Paquete 5 clases'
-    , 900
-    ,5
-), (
-	'Mes sin membresía'
-    , 900
-), (
-	'Clase Individual'
-    , 900
-), (
-	
+	'Clase'
 );
 
 insert into nemachtilkali.nm_catmembership (
 	nmcm_desc
+    , nmcm_amount
 ) values (
+	'Membresía Platinum'
+    , 900
+), (
 	'Membresía Gold'
+    , 600
 ), (
 	'Membresía Silver'
+    , 300
 ), (
-	'Membresía Bronze'
+	'Sin membresía'
+    , 0
+);
+
+insert into nemachtilkali.nm_paquetes(
+	nmpk_desc
+    , nmpk_amount
+    , nmpk_classnumber
+    , nmpk_mid
+) values (
+	'15 clases'
+    , 900
+    , 15
+    , 1
+), (
+	'8 clases'
+    , 560
+    , 8
+    , 1
+), (
+	'4 clases'
+    , 320
+    , 4
+    , 1
+), (
+	'15 clases'
+    , 1050
+    , 15
+    , 2
+), (
+	'8 clases'
+    , 640
+    , 8
+    , 2
+), (
+	'4 clases'
+    , 360
+    , 4
+    , 2
+), (
+	'15 clases'
+    , 1050
+    , 15
+    , 2
+), (
+	'8 clases'
+    , 640
+    , 8
+    , 2
+), (
+	'4 clases'
+    , 360
+    , 4
+    , 2
+), (
+	'15 clases'
+    , 1200
+    , 15
+    , 3
+), (
+	'8 clases'
+    , 720
+    , 8
+    , 3
+), (
+	'4 clases'
+    , 400
+    , 4
+    , 3
+), (
+	'15 clases'
+    , 1350
+    , 15
+    , 4
+), (
+	'8 clases'
+    , 800
+    , 8
+    , 4
+), (
+	'4 clases'
+    , 440
+    , 4
+    , 4
 );
 /* Fin catálogos */
 
