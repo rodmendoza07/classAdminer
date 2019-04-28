@@ -38,8 +38,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
-<!--<body onload="AppBegin()">-->
-	<body>
+<body onload="AppBegin()">
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -68,7 +67,7 @@
 				<img src="images/emporio.jpg" class="img-responsive" alt="">
 			</div>
 			<div class="profile-usertitle">
-				<div class="profile-usertitle-name" id="usrnombre"><?php echo $_SESSION['un']; ?></div>
+				<div class="profile-usertitle-name" id="usrnombre"><?php echo $_SESSION['nombrecompleto']; ?></div>
 				<div class="profile-usertitle-status" id="jobpos"><span class="indicator label-success"></span><?php echo $_SESSION['job']; ?></div>
 			</div>
 			<div class="clear"></div>
@@ -82,7 +81,7 @@
 				}
 			?>
 		</ul>
-		<button class="btn btn-lg btn-success btn-block" id="vieworder">Ver orden</button>
+		<!--<button class="btn btn-lg btn-success btn-block" id="vieworder">Ver orden</button>-->
 	</div><!--/.sidebar-->
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main" id="maincontent">

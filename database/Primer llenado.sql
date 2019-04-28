@@ -129,41 +129,109 @@ insert into nemachtilkali.nm_cathorarios (
 
 insert into nemachtilkali.nm_catpagos (
 	nmcp_desc
-    , nmcp_amount
 ) values (
-	'Membresía Gold'
-    , 900
+	'Membresía'
 ), (
-	'Membresía Silver'
-    , 900
-), (
-	'Membresía Bronze'
-    , 900
-), (
-	'Mes membresia Gold'
-    , 900
-), (
-	'Mes membresía Silver'
-    , 900
-), (
-	'Mes membresía Bronze'
-    , 900
-), (
-	'Mes sin membresía'
-    , 900
-), (
-	'Clase Individual'
-    , 900
+	'Clase'
 );
 
 insert into nemachtilkali.nm_catmembership (
 	nmcm_desc
+    , nmcm_amount
 ) values (
+	'Membresía Platinum'
+    , 900
+), (
 	'Membresía Gold'
+    , 600
 ), (
 	'Membresía Silver'
+    , 300
 ), (
-	'Membresía Bronze'
+	'Sin membresía'
+    , 0
+);
+
+insert into nemachtilkali.nm_paquetes(
+	nmpk_desc
+    , nmpk_amount
+    , nmpk_classnumber
+    , nmpk_mid
+) values (
+	'15 clases'
+    , 900
+    , 15
+    , 1
+), (
+	'8 clases'
+    , 560
+    , 8
+    , 1
+), (
+	'4 clases'
+    , 320
+    , 4
+    , 1
+), (
+	'15 clases'
+    , 1050
+    , 15
+    , 2
+), (
+	'8 clases'
+    , 640
+    , 8
+    , 2
+), (
+	'4 clases'
+    , 360
+    , 4
+    , 2
+), (
+	'15 clases'
+    , 1050
+    , 15
+    , 2
+), (
+	'8 clases'
+    , 640
+    , 8
+    , 2
+), (
+	'4 clases'
+    , 360
+    , 4
+    , 2
+), (
+	'15 clases'
+    , 1200
+    , 15
+    , 3
+), (
+	'8 clases'
+    , 720
+    , 8
+    , 3
+), (
+	'4 clases'
+    , 400
+    , 4
+    , 3
+), (
+	'15 clases'
+    , 1350
+    , 15
+    , 4
+), (
+	'8 clases'
+    , 800
+    , 8
+    , 4
+), (
+	'4 clases'
+    , 440
+    , 4
+    , 4
 );
 /* Fin catálogos */
 
@@ -186,12 +254,77 @@ insert into nemachtilkali.nm_usuario (
     , 'Administrador@emporiosalsa.mx'
     , 1
     , 1
+), (
+	'ivan'
+    , 'Ivan'
+    , 'Soria'
+    , ''
+    , md5(concat('ivan__3mp0r10@emporiosalsa.mx'))
+    , 'isoria@emporiosalsa.mx'
+    , 2
+    , 1 
+), (
+	'rmendoza'
+    , 'Rodrigo'
+    , 'Mendoza'
+    , ''
+    , md5(concat('rmendoza__Rocksystem1@emporiosalsa.mx'))
+    , 'rmendoza@ctsnet.mx'
+    , 1
+    , 1 
 );
 
 insert into nm_appmenu ( 
 	nmapp_link
     , nmapp_cuid
 ) values (
-	'<li class="active"><a href="index.php" class="food"><em class="fa fa-cutlery">&nbsp;</em> Alimentos</a></li>'
+	'<li class="active"><a href="index.php" class="list"><em class="fa fa-address-card">&nbsp;</em> Asistencias</a></li>'
+    , 1
+), (
+	'<li><a href="#" class="payment"><em class="fa fa-dollar">&nbsp;</em> Pagos</a></li>'
+    , 1
+), (
+	'<li><a href="#" class="nclient"><em class="fa fa-user-plus">&nbsp;</em> Registro de clientes</a></li>'
+    , 1
+), (
+	'<li><a href="#" class="reports"><em class="fa fa-line-chart">&nbsp;</em> Reportes</a></li>'
+    , 1
+), (
+	'<li><a href="#" class="config"><em class="fa fa-cogs">&nbsp;</em> Configuración</a></li>'
+    , 1
+), (
+	'<li class="active"><a href="index.php" class="list"><em class="fa fa-address-card">&nbsp;</em> Asistencias</a></li>'
+    , 2
+), (
+	'<li><a href="#" class="payment"><em class="fa fa-dollar">&nbsp;</em> Pagos</a></li>'
+    , 2
+), (
+	'<li><a href="#" class="nclient"><em class="fa fa-user-plus">&nbsp;</em> Registro de clientes</a></li>'
+    , 2
+);
+
+/*Dump*/
+insert into nemachtilkali.nm_clientes(
+	nmcl_nombre
+    , nmcl_apaterno
+    , nmcl_amaterno
+    , nmcl_mtel
+    , nmcl_ftel
+    , nmcl_ucreate
+) values (
+	'Luis Rodrigo'
+    , 'Mendoza'
+    , 'Rodríguez'
+    , '5514889583'
+    , '55986989'
+    , 3
+);
+
+insert into nemachtilkali.nm_actividadcliente (
+	nmac_clid
+    , nmac_clasid
+) values (
+	1
     , 1
 );
+
