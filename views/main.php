@@ -52,7 +52,7 @@
                     <?php
                         for ($i = 0; $i < count($_SESSION['clientes_lista']); $i++) {
                             # code...
-                            echo '<tr><th>'.$_SESSION['clientes_lista'][$i][0].'</th><th class="text-center">'.$_SESSION['clientes_lista'][$i][1].'</th><th class="text-center">'.$_SESSION['clientes_lista'][$i][2].'</th><th>'.$_SESSION['clientes_lista'][$i][3].'</th><th class="text-center">'.$_SESSION['clientes_lista'][$i][4].'</th></tr>';
+                            echo '<tr><th>'.$_SESSION['clientes_lista'][$i][0].'</th><th class="text-left">'.$_SESSION['clientes_lista'][$i][1].'</th><th class="text-center">'.$_SESSION['clientes_lista'][$i][2].'</th><th>'.$_SESSION['clientes_lista'][$i][3].'</th><th class="text-center">'.$_SESSION['clientes_lista'][$i][4].'</th></tr>';
                         }
                     ?>
                     </tbody>

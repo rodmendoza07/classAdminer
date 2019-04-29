@@ -1031,3 +1031,16 @@ p.back-link {
   margin-bottom: 20px;
   font-size: 12px;
   text-transform: uppercase; }
+ 
+  /*custom styles*/
+  .bg-platinum {
+    color: #fff;
+    background-color: #000; }
+  
+  .bg-gold {
+    color: #fff;
+    background-color: #D4AF37; }
+  
+  .bg-silver {
+    color: #fff;
+    background-color: #A9A9A9; }
