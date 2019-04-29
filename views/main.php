@@ -1,7 +1,7 @@
 <?php
     error_reporting(E_ERROR | E_PARSE);
 	include '../include/class/class.auth.php';
-    //include '../include/class/class.dishes.php';
+    include '../include/class/class.client.php';
 	session_start();
 	if (!isset($_SESSION['tokk'])) {
 		header('location: login.html');
@@ -12,8 +12,8 @@
 		$comparetoken->uloginindex(strip_tags($_SESSION['un']), strip_tags($_SESSION['pass']), strip_tags($_SESSION['tokk']));
         $comparetoken->getuserinfo(strip_tags($_SESSION['tokk']));
         
-        // $showd = new dish();
-        // $showd->getDishes();
+        $showclientes = new cliente();
+        $showclientes->getClientes();
 	}
 ?>
 <div class="row">
@@ -50,9 +50,9 @@
                     </thead>
                     <tbody>
                     <?php
-                        for ($i = 0; $i < count($_SESSION['cutz']); $i++) {
+                        for ($i = 0; $i < count($_SESSION['clientes_lista']); $i++) {
                             # code...
-                            echo '<tr><th class="text-center">'.$_SESSION['cutz'][$i][0].'</th><th class="text-right">'.$_SESSION['cutz'][$i][1].'</th><th class="text-center">'.$_SESSION['cutz'][$i][2].'</th><th>'.$_SESSION['cutz'][$i][3].'</th><th class="text-right">'.$_SESSION['cutz'][$i][4].'</th><th class="text-center">'.$_SESSION['cutz'][$i][5].'</th><th class="text-center">'.$_SESSION['cutz'][$i][6].'</th></tr>';
+                            echo '<tr><th>'.$_SESSION['clientes_lista'][$i][0].'</th><th class="text-left">'.$_SESSION['clientes_lista'][$i][1].'</th><th class="text-center">'.$_SESSION['clientes_lista'][$i][2].'</th><th>'.$_SESSION['clientes_lista'][$i][3].'</th><th class="text-center">'.$_SESSION['clientes_lista'][$i][4].'</th></tr>';
                         }
                     ?>
                     </tbody>

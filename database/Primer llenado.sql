@@ -318,6 +318,20 @@ insert into nemachtilkali.nm_clientes(
     , '5514889583'
     , '55986989'
     , 3
+), (
+	'Chuchito'
+    , 'Perez'
+    , 'Lopez'
+    , '5514889583'
+    , '55986989'
+    , 3
+), (
+	'Pedro'
+    , 'Infante'
+    , 'Peters'
+    , '5514889583'
+    , '55986989'
+    , 3
 );
 
 insert into nemachtilkali.nm_actividadcliente (
@@ -326,6 +340,12 @@ insert into nemachtilkali.nm_actividadcliente (
 ) values (
 	1
     , 1
+), (
+	2
+    , 2
+), (
+	3
+    , 3
 );
 
 insert into nemachtilkali.nm_lista (
@@ -335,6 +355,14 @@ insert into nemachtilkali.nm_lista (
 ) values (
 	now()
     , 1
+    , 3
+), (
+	date_add(now(), interval -1 month)
+    , 2
+    , 3
+), (
+	date_add(now(), interval -4 day)
+    , 3
     , 3
 );
 
@@ -353,12 +381,42 @@ insert into nemachtilkali.nm_pagos (
     , 1
     , 3
     , 900
+), (
+	1
+    , 2
+    , 3
+    , 600
+), (
+	2
+    , 2
+    , 3
+    , 640
+), (
+	1
+    , 3
+    , 3
+    , 300
+), (
+	2
+    , 3
+    , 3
+    , 400
 );
 
 insert into nemachtilkali.nm_dpagom(
 	nmdpm_pid
     , nmdpm_mid
+    , nmdpm_createdate
 ) values(
 	1
     , 1
+    , now()
+), (
+	3
+    , 2
+    , date_add(now(), interval -4 month)
+), (
+	5
+    , 3
+    , date_add(now(), interval -2 month) 
 );
