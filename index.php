@@ -179,18 +179,8 @@
 	<script src="js/customjs/AppBegin.js"></script>
 	<script src="js/customjs/activemenu.js"></script>
 	<script src="js/customjs/mainjs.js"></script>
-	<script src="js/customjs/sideMenus.js"></script>
-	<script src="js/customjs/inventory.js"></script>
-	<script src="js/customjs/paquetes.js"></script>
-	<script src="js/customjs/extras.js"></script>
-	<script src="js/customjs/drinks.js"></script>
-	<script src="js/customjs/addDish.js"></script>
-	<script src="js/customjs/showCommand.js"></script>
-	<script src="js/customjs/paymentType.js"></script>
-	<script src="js/customjs/cuty.js"></script>
-	<script src="js/customjs/cutz.js"></script>
-	<script src="js/customjs/modmenu.js"></script>
-
+	<script src="js/customjs/payment.js"></script>
+	<script src="js/customjs/addclient.js"></script>
 	<script type="text/javascript">
 		$("#vieworder").click(function (){
 			$("#confirmorder").modal({backdrop: 'static', keyboard: false});

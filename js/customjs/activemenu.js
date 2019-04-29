@@ -9,12 +9,10 @@ function activeMenu(){
     }
 
     this.deactivate = function() {
-        $(".package").parent().removeClass("active");
-        $(".extra").parent().removeClass("active");
-        $(".drinks").parent().removeClass("active");
-        $(".cuty").parent().removeClass("active");
-        $(".cutx").parent().removeClass("active");
-        $(".food").parent().removeClass("active");
-        $(".modmenu").parent().removeClass("active");
+        $(".list").parent().removeClass("active");
+        $(".payment").parent().removeClass("active");
+        $(".nclient").parent().removeClass("active");
+        $(".reports").parent().removeClass("active");
+        $(".config").parent().removeClass("active");
     }
 }
