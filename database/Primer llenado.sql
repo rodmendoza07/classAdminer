@@ -303,6 +303,16 @@ insert into nm_appmenu (
     , 2
 );
 
+insert into nemachtilkali.nm_catsexo(
+	nmcs_desc
+) values(
+	'Femenino'
+), (
+	'Masculino'
+), (
+	'Ningúno'
+);
+
 /*Dump*/
 insert into nemachtilkali.nm_clientes(
 	nmcl_nombre
@@ -311,6 +321,7 @@ insert into nemachtilkali.nm_clientes(
     , nmcl_mtel
     , nmcl_ftel
     , nmcl_ucreate
+	, nmcl_sexid
 ) values (
 	'Luis Rodrigo'
     , 'Mendoza'
@@ -318,6 +329,7 @@ insert into nemachtilkali.nm_clientes(
     , '5514889583'
     , '55986989'
     , 3
+    , 1
 ), (
 	'Chuchito'
     , 'Perez'
@@ -325,6 +337,7 @@ insert into nemachtilkali.nm_clientes(
     , '5514889583'
     , '55986989'
     , 3
+    , 1
 ), (
 	'Pedro'
     , 'Infante'
@@ -332,6 +345,7 @@ insert into nemachtilkali.nm_clientes(
     , '5514889583'
     , '55986989'
     , 3
+    , 1
 );
 
 insert into nemachtilkali.nm_actividadcliente (
