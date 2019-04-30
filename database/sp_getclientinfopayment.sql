@@ -19,6 +19,7 @@ BEGIN
 			when cc.nmcclas_id = 1 then concat('<span class="bg-info">&nbsp;&nbsp;',cc.nmcclas_desc,'&nbsp;&nbsp;</span>')
             when cc.nmcclas_id = 2 then concat('<span class="bg-success">&nbsp;&nbsp;',cc.nmcclas_desc,'&nbsp;&nbsp;</span>')
             when cc.nmcclas_id = 3 then concat('<span class="bg-warning">&nbsp;&nbsp;',cc.nmcclas_desc,'&nbsp;&nbsp;</span>')
+            when cc.nmcclas_id = 4 then concat('<span class="bg-teal">&nbsp;&nbsp;',cc.nmcclas_desc,'&nbsp;&nbsp;</span>')
             end as actividad
         , date_format(p.nmp_createdate, '%d/%m/%Y') as ultimpagorealizado
         , case
