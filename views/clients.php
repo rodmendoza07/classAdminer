@@ -87,7 +87,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label>Número de clases:</label>
+                            <label>N&uacute;mero de clases:</label>
                             <select name="activity" id="activity" class="form-control">
     
                             </select>
