@@ -1,6 +1,7 @@
 <?php
     error_reporting(E_ERROR | E_PARSE);
-	include '../include/class/class.auth.php';
+    include '../include/class/class.auth.php';
+    include '../include/class/class.client.php';
 	session_start();
 	if (!isset($_SESSION['tokk'])) {
 		header('location: login.html');
@@ -10,6 +11,10 @@
 		$comparetoken = new auth();
 		$comparetoken->uloginindex(strip_tags($_SESSION['un']), strip_tags($_SESSION['pass']), strip_tags($_SESSION['tokk']));
         $comparetoken->getuserinfo(strip_tags($_SESSION['tokk']));
+
+        $clases = new cliente();
+        $clases->getActivities();
+        $clases->getMemberships();
 	}
 ?>
 <div class="row">
@@ -56,15 +61,27 @@
                         <div class="form-group">
                             <label>Actividad:</label>
                             <select name="activity" id="activity" class="form-control">
-    
+                            <?php
+                                echo '<option><span class="bg-info">&nbsp;&nbsp;-- Selecciona --&nbsp;&nbsp;</span></option>';
+                                for ($i=0; $i < count($_SESSION['activities']) ; $i++) { 
+                                    # code...
+                                    echo '<option value="'.$_SESSION['activities'][$i][0].'">'.$_SESSION['activities'][$i][1].'</option>';
+                                }
+                            ?>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label>Membresía:</label>
-                            <select name="activity" id="activity" class="form-control">
-    
+                            <select name="membership" id="membership" class="form-control">
+                            <?php
+                                echo '<option><span class="bg-info">&nbsp;&nbsp;-- Selecciona --&nbsp;&nbsp;</span></option>';
+                                for ($i=0; $i < count($_SESSION['membership']) ; $i++) { 
+                                    # code...
+                                    echo '<option value="'.$_SESSION['membership'][$i][0].'">'.$_SESSION['membership'][$i][1].'</option>';
+                                }
+                            ?>
                             </select>
                         </div>
                     </div>
