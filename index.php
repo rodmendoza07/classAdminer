@@ -181,43 +181,5 @@
 	<script src="js/customjs/mainjs.js"></script>
 	<script src="js/customjs/payment.js"></script>
 	<script src="js/customjs/addclient.js"></script>
-	<script type="text/javascript">
-		$("#vieworder").click(function (){
-			$("#confirmorder").modal({backdrop: 'static', keyboard: false});
-			var objShowCommand = new showCommand();
-			$("#cancelorder").click(function() {
-				var ajaxF = $.ajax({
-					contentType: "application/json; charset=utf-8",
-					type: "POST",
-					url: "include/cancelOrder.php",
-					dataType: 'JSON',
-					async: false,
-					beforeSend: function() {
-					},
-					success: function (response) {
-						if (response.errno) {
-							toastr.error("Algo ha ido mal, por favor intentalo más tarde.", "¡Upps!", 5000);
-							console.log('cancelOrder - ',response.message)
-						} else {
-							alert(response.data);
-						}
-					},
-					error: function (XMLHttpRequest, textStatus, errorThrown){
-						toastr.error("Algo ha ido mal, por favor intentalo más tarde.", "¡Atención!", 5000);
-						console.log('cancelOrder - ', errorThrown);
-						console.log('cancelOrder - ', XMLHttpRequest);
-					}
-				});
-				location.reload();
-			});
-			$("#setsale").click(function() {
-				$("#confirmorder").modal('hide');
-				$("#paymenttype").modal({backdrop: 'static', keyboard: false});
-				var objPayment = new paymentType();
-				objPayment.getPaymentType();
-			});
-		});
-	</script>
-
 </body>
 </html>
