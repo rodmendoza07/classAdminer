@@ -3,8 +3,8 @@
     //$s = "sql.ctsnet.mx";
     $u = "root";
     //$u = "ctsnet";
-    $p = "root";
-    //$p = "";
+    //$p = "root";
+    $p = "";
     //$p = "MlKGum7C";
     $b = "nemachtilkali";
     //$b = "ctsnet_tlakualco";

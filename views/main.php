@@ -43,8 +43,8 @@
                         <tr>
                             <th class="text-center">Nombre</th>
                             <th class="text-center">Actividad</th>
-                            <th class="text-center">Última visita</th>
-                            <th class="text-center">Tipo de membresía</th>
+                            <th class="text-center">&Uacute;ltima visita</th>
+                            <th class="text-center">Tipo de membres&iacute;a</th>
                             <th class="text-center">Expira en:</th>
                         </tr>
                     </thead>
