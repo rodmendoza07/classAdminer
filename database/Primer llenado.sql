@@ -80,15 +80,15 @@ insert into nemachtilkali.nm_cathorarios (
 ), (
 	'19:00'
     , '20:00'
-    , 'Miércoles'
+    , 'Mi&eacute;rcoles'
 ), (
 	'20:00'
     , '21:00'
-    , 'Miércoles'
+    , 'Mi&eacute;rcoles'
 ), (
 	'21:00'
     , '22:00'
-    , 'Miércoles'
+    , 'Mi&eacute;rcoles'
 ), (
 	'19:00'
     , '20:00'
